@@ -1,7 +1,11 @@
 <template>
   <div class="wrapper">
     <Header />
-    <h1>Nice</h1>
+
+    <div class="main__page">
+      <Main />
+    </div>
+    <Footer />
   </div>
 </template>
 
@@ -19,7 +23,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-h1 {
-  color: aqua;
+.wrapper {
+      display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 </style>
